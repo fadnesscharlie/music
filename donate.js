@@ -6,10 +6,37 @@
 
 
 // variables
+let piano = 2250;
+var donate = function () {
+    let howMuch = prompt("How much would you like to donate?")
+    if (isNaN(howMuch)) {
+        let howMuch = prompt("How much would you like to donate?")
+
+    } else {
+        donated = howMuch * piano / 10
+    }
+    return window.alert("You will donate " + donated + " with your purchase!");
+
+}
+
+//     if (typeOf howMuch == 'number') {
+//         // howMuch.unshift('.')
+//         donated = howMuch * piano / 34
+//         // document.write("")
+//     } else {
+//         alert('Opps, you did not enter a number. Please refresh the page.')
+//     }
+//     return "You will donate " + donated + " with your purchase!";
+// }
+
+
+
+/*
+let item;
 
 let donate10, donate15, donate20, piano, base;
 
-let piano = 2250;
+
 
 // Create a function to multiple piano cost to donate*
 
@@ -32,4 +59,26 @@ el20.textContent = donate20;
 document.write('<h3>' + donate10 + "Hello" + '</h3>')
 document.write(`<h3>` + `Hello` + `</h3>`)
 
+*/
 // need to make this a function and call it
+
+
+// var showOrder = function () {
+//     let order = prompt("What would you like to order?")
+//     let item;
+
+//     if (order === 'house') {
+//         item - '<img src="/*path to image*/">';  
+//     }   else if (order === 'hotel') {
+//         item = 'img src="/*path to image*/">';
+//     }
+//     else {
+//         item = '<strong>No items ordered</strong>';
+//     }
+//     return item;
+// }
+
+// Place inside HTML
+// <script>docoument.write(showOrder())</script>
+
+

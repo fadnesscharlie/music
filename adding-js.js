@@ -63,6 +63,47 @@ document.write('<h3>' + greeting
 
 
 
+// function createGreeting(/*parameters*/) {
+//     // va today = new Date();
+//     var hourNow = 1;
+//     var greeting;
+
+//     if (hourNow > 18) {
+//         greeting = 'Good Evening, Class!';
+//     } else if (hourNow > 12) {
+//         greeting = 'Good afternoon, Class!';
+//     } else if (hourNow > 0) {
+//         greeting = 'Good morning, Class!';
+//     } else {
+//         greeting = 'Welcome!';
+//     }
+
+//     return '<h3>' + greeting + '</h3>'
+// }
+
+// // Place inside HTML
+// // <script>docoument.write(createGreeting())</script>
+
+
+// var showOrder = function () {
+//     let order = prompt("What would you like to order?")
+//     let item;
+
+//     if (order === 'house') {
+//         item - '<img src="/*path to image*/">';  
+//     }   else if (order === 'hotel') {
+//         item = 'img src="/*path to image*/">';
+//     }
+//     else {
+//         item = '<strong>No items ordered</strong>';
+//     }
+//     return item;
+// }
+
+// Place inside HTML
+// <script>docoument.write(showOrder())</script>
+
+
 
 
 
