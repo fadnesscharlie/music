@@ -6,20 +6,52 @@
 
 
 // variables
+// let piano = 2250;
+// var donate = function () {
+//     let howMuch = prompt("How much would you like to donate?")
+//     if (isNaN(howMuch)) {
+//         howMuch = prompt("How much would you like to donate?")
+
+//     } else {
+//         donated = howMuch * piano / 10
+//     }
+//     return window.alert("You will donate " + donated + " with your purchase!");
+
+// }
+
+
+
+// let piano = 2250;
+// var donate = function () {
+//     let howMuch = prompt("How much would you like to donate?")
+//     howMuch = Number(howMuch)
+//     if (isNaN(howMuch)) {
+//         howMuch = prompt("Please enter a number?")
+//     } else {
+//         howMuch = alert("thanks for donating "+howMuch +"!")
+//     }
+//     return window.alert(something);
+// }
+
+
 let piano = 2250;
 var donate = function () {
     let howMuch = prompt("How much would you like to donate?")
-    if (isNaN(howMuch)) {
-        let howMuch = prompt("How much would you like to donate?")
-
-    } else {
-        donated = howMuch * piano / 10
-    }
-    return window.alert("You will donate " + donated + " with your purchase!");
-
+    howMuch = Number(howMuch)
+    while (isNaN(howMuch)) {
+        howMuch = prompt("Please enter a number?")
+        } 
+        
+    
+    donated = howMuch * piano / 10
+        // howMuch = alert("thanks for donating "+howMuch +"!")
+    
+    return window.alert("thanks for donating "+donated +"!");
 }
 
-//     if (typeOf howMuch == 'number') {
+
+
+    //     if (typeOf howMuch == 'number') {
 //         // howMuch.unshift('.')
 //         donated = howMuch * piano / 34
 //         // document.write("")
@@ -82,3 +114,56 @@ document.write(`<h3>` + `Hello` + `</h3>`)
 // <script>docoument.write(showOrder())</script>
 
 
+// control shift pb? 
+// in the console, bring up snippet
+
+
+
+
+/*
+
+function whileLoop(input){
+    let odrder = input;
+    while(order!== 'house' && order !== 'hotel') {
+        console.log('Please enter "house" or "hotel"...')
+    }
+}
+
+whileLoop("dog");
+
+let getItem = function () {
+    let order = prompt('What would you like to order?')
+    let item;
+    //     house       F        house         T
+    while (order !== 'house' && order !== 'hotel') {
+        order = prompt('Pleaes enter "house" or "hotel"')
+    }
+
+    if (order === 'hotel') {
+        item = '<img src="">';
+    } else if (order === 'house') {
+        item = '<img src="">';
+    }
+
+    let howMany = function () {
+        let count = prompt('How many do you want to order?');
+
+        while (count === "" || isNaN(count)) {
+            count = prompt('Please enter a number. How many do you want?');
+        }
+    }
+
+    let showOrder = function () {
+        let item = getItem();
+        let total = howMany();
+        let result = "";
+
+        for (let i =0; i < total; i++) {
+            result = result + '<p>Model #' + i + " " + item + '</p>';
+        }
+        return result;
+    }
+}
+
+
+*/
