@@ -58,6 +58,7 @@ article {
 .art {
     width: 33%;
     align-items: center;
+    margin: auto;
 }
 
 .artDoc {
