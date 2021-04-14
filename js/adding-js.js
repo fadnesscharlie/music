@@ -46,11 +46,11 @@ var greeting;
 // Started empty variable
 
 if (hourNow > 18) {
-    greeting = 'Good Evening!';
+    greeting = 'Welcome to the music in the evening!';
 } else if (hourNow > 12) {
-    greeting = 'Good afternoon!';
+    greeting = 'Welcome to the music in the afternoon!';
 } else if (hourNow > 0) {
-    greeting = 'Good morning!';
+    greeting = 'Welcome to the music in the morning!';
 } else {
     greeting = 'Welcome!';
 }
