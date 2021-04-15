@@ -102,7 +102,7 @@ document.write(`<h3>` + `Hello` + `</h3>`)
 //     if (order === 'house') {
 //         item - '<img src="/*path to image*/">';  
 //     }   else if (order === 'hotel') {
-//         item = 'img src="/*path to image*/">';
+        // item = 'img src="/*path to image*/">';
 //     }
 //     else {
 //         item = '<strong>No items ordered</strong>';
