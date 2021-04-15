@@ -167,3 +167,31 @@ let getItem = function () {
 
 
 */
+
+
+// function language () {
+//     let question - prompt("What language would you like to learn: Java, JS, Rust, C");
+
+//     while (question !== "Java" || question !== "JS") {
+//         question = prompt("Please enter: Java, JS, Rust, C")
+//     }
+//     if (Java) {
+//         image = "image_file"
+//     } else if (JS) {
+
+
+//     } else {
+
+//     }
+
+//     let time = studyTime();
+//     for (let i = 0; i <= timel i++) {
+        
+//     }
+//     return image;
+// }
+
+// function studyTime() {
+//     prompt("for how many hours")
+//     return answer
+// }
