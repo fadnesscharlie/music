@@ -22,14 +22,37 @@ var lang = function () {
 
 // Button Donate
 
-let piano = 2250;
+
 var animal = function () {
     var howMuch = prompt("Guess my favorite animal? Choose between: Monkey, Cat, Dog, Bird, Turtle, or Lizard")
-    while (howMuch != "Cat") {
+    let image ;
+    let holder = " " ;
+    while (howMuch != "Cat" && howMuch != "cat") {
         howMuch = prompt("You chose wrong! Please try again! Choose between: Monkey, Cat, Dog, Bird, Turtle, or Lizard")
     }
-    return window.alert("You chose correctly!!! My Favorite animal is  "+ howMuch +"!");
+    // window.alert("You chose correctly!!! My Favorite animal is  "+ howMuch +"!");
+
+    let time = moreCats();
+    image = '<img src = "./images/cat.jpg" alt ="cat">'
+    for (var i = 0; i < time; i++) {
+        holder = holder + '<p>' + 'Cute Kitty #' + i + " " + image + '</p>';
+        // holder = holder + image;
+    }
+
+    return holder;
 }
+
+function moreCats() {
+    moreCats = prompt("How many cats would you like to see?: ")
+    return moreCats;
+}
+
+
+
+
+
+
+
 
 
 
