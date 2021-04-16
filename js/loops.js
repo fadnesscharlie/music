@@ -25,25 +25,14 @@ var lang = function () {
 let piano = 2250;
 var animal = function () {
     var howMuch = prompt("Guess my favorite animal? Choose between: Monkey, Cat, Dog, Bird, Turtle, or Lizard")
-    // howMuch = Number(howMuch)
-    // console.log(typeof(howMuch))
-    // we want to make sure the response is a number
-    //     ("" = T  //  5 = F)
-    //              44 F            55 F
     while (howMuch != "Cat") {
         howMuch = prompt("You chose wrong! Please try again! Choose between: Monkey, Cat, Dog, Bird, Turtle, or Lizard")
-        // console.log(typeof(howMuch))
-        // break;
-    } 
-        
-    // if (howMuch === "") {
-    //     return window.alert("The kids will try to get the instruments somehow...")
-    // }
-    // donated = howMuch * piano / 10
-        // howMuch = alert("thanks for donating "+howMuch +"!")
-
+    }
     return window.alert("You chose correctly!!! My Favorite animal is  "+ howMuch +"!");
 }
+
+
+
 
 
 // On Window Prompt
