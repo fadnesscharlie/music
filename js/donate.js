@@ -38,6 +38,7 @@ let piano = 2250;
 var donate = function () {
     let howMuch = prompt("How much would you like to donate?")
     howMuch = Number(howMuch)
+    // we want to make sure the response is a number
     while (isNaN(howMuch)) {
         howMuch = prompt("Please enter a number?")
         } 
@@ -50,8 +51,7 @@ var donate = function () {
 }
 
 
-
-    //     if (typeOf howMuch == 'number') {
+//     if (typeOf howMuch == 'number') {
 //         // howMuch.unshift('.')
 //         donated = howMuch * piano / 34
 //         // document.write("")
@@ -120,16 +120,18 @@ document.write(`<h3>` + `Hello` + `</h3>`)
 
 
 
-/*
+
 
 function whileLoop(input){
-    let odrder = input;
+    let order = input;
     while(order!== 'house' && order !== 'hotel') {
         console.log('Please enter "house" or "hotel"...')
     }
 }
+// whileLoop("dog");
 
-whileLoop("dog");
+
+
 
 let getItem = function () {
     let order = prompt('What would you like to order?')
@@ -159,14 +161,39 @@ let getItem = function () {
         let result = "";
 
         for (let i =0; i < total; i++) {
-            result = result + '<p>Model #' + i + " " + item + '</p>';
+            result = result + '<p>' + 'Model #' + i + " " + item + '</p>';
         }
         return result;
     }
 }
 
 
-*/
+
+let piano = 2250;
+var donate = function () {
+    var howMuch = prompt("How much would you like to donate?")
+    // howMuch = Number(howMuch)
+    // console.log(typeof(howMuch))
+    // we want to make sure the response is a number
+    //     ("" = T  //  5 = F)
+    //              44 F            55 F
+    while (howMuch == NaN) {
+        howMuch = prompt("Please enter a number?")
+        // console.log(typeof(howMuch))
+        // break;
+    } 
+        
+    // if (howMuch === "") {
+    //     return window.alert("The kids will try to get the instruments somehow...")
+    // }
+    donated = howMuch * piano / 10
+        // howMuch = alert("thanks for donating "+howMuch +"!")
+
+    return window.alert("thanks for donating "+donated +"!");
+}
+
+
+
 
 
 // function language () {
